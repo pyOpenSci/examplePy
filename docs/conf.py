@@ -31,6 +31,7 @@ release = '0.1'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = ['sphinx_gallery.gen_gallery',
+               "myst_parser"
 ]
 
 # Sphinx gallery 
