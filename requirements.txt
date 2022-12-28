@@ -1,0 +1,9 @@
+
+# for sphinx gallery only
+sphinx-gallery
+pillow
+seaborn
+
+# theme and syntax
+myst_parser
+furo

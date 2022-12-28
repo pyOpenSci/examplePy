@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+version_scheme =  "post-release"
+local_scheme =  "node-and-date" # what does this do?
+write_to =  "verde/_version_generated.py"
+
+# https://packaging.python.org/en/latest/tutorials/packaging-projects/#configuring-metadata 
+# How do we know how much metadata to include?
+[project]
+name = "examplePy"
+authors = [
+    {name = "Some Maintainer", email = "some-email@pyopensci.org"}
+]
+maintainers = [{name = "All the contributors"}]
+license = {text = "BSD 3-Clause"}
+description = "An example Python package used to support Python packaging tutorials"
+keywords = ["pyOpenSci", "python packaging"]
+readme = "README.md"
+# List of classifiers here: https://pypi.org/classifiers/
+
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: BSD License", 
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only", # when would I want to use this?
+    "Topic :: Education :: Testing",
+]
+requires-python = ">=3.8"
+# Add one or two deps just cause
+dependencies = [
+]
+
+[project.urls]
+Home = "https://www.pyopensci.org/python-package-tutorials?"
+Repository = "https://github.com/pyopensci/examplePy"
+Documentation = "url-here"
+Bug Tracker = "https://github.com/pyopensci/examplePy/issues"
