@@ -1,0 +1,4 @@
+
+# for sphinx gallery only
+sphinx-gallery
+pillow
