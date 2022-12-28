@@ -30,8 +30,11 @@ release = '0.1'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['sphinx_gallery.gen_gallery',
-               "myst_parser"
+extensions = ['nbsphinx',
+               "myst_parser",
+               # This loads a front end gallery for nbsphinx based on sphinx gallery
+               'sphinx_gallery.load_style',
+               "sphinx_copybutton",
 ]
 
 # Sphinx gallery 

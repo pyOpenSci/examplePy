@@ -1,12 +1,14 @@
 # Welcome to examplePy's documentation!
 
 
+Here is some content 
+
 ```{toctree}
 :hidden:
 :caption: Example
 
 Home <self>
-gallery <built_examples/index>
+gallery <tutorials/index>
 ```
 
 
