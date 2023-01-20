@@ -1,0 +1,26 @@
+[tool.pdm]
+
+[project]
+name = "examplePy"
+version = "0.1.00"
+description = "The best package ever made."
+authors = [
+    {name = "pyOpenSci", email = "email@email.com"},
+]
+dependencies = [
+    "nbsphinx",
+    "pandoc",
+    "sphinx-gallery",
+    "pillow",
+    "seaborn",
+    "myst-parser",
+    "furo",
+    "requests>=2.28.2",
+]
+requires-python = ">=3.7"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-pep517>=1.0.0"]
+build-backend = "pdm.pep517.api"
