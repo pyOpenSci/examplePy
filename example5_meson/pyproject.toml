@@ -1,0 +1,25 @@
+[build-system]
+build-backend = 'mesonpy'
+requires = ['meson-python']
+
+
+[project]
+name = "examplePy"
+version = "0.1.00"
+description = "The best package ever made."
+authors = [
+    {name = "pyOpenSci", email = "email@email.com"},
+]
+classifiers = [
+  'Development Status :: 4 - Beta',
+  'Programming Language :: Python',
+]
+dependencies = [
+    "requests",
+]
+requires-python = ">=3.8"
+readme = "README.md"
+license = {text = "MIT"}
+
+[project.urls]
+homepage = 'https://github.com/examplePy'
