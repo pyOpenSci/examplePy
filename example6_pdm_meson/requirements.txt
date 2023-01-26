@@ -1,12 +1,2 @@
-# nbsphinx setup
-nbsphinx 
-pandoc # if you don't install this tutorials wont' build 
-
-# for sphinx gallery only
-sphinx-gallery
-pillow
-seaborn
-
-# theme and syntax
-myst_parser
-furo
+ninja
+meson-python
