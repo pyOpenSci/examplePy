@@ -1,0 +1,5 @@
+# This file doesn't need to be committed to version control
+# it is specific to your individual computer
+.pdm.toml
+# If you have enabled pep 582 you can also ignore this directory
+__pypackages__/
