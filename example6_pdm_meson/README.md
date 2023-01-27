@@ -2,31 +2,28 @@
 
 
 ## Requirements 
-When combining both pdm and meson-python, install requirements become 
-important. this is not clearly documented so far in any of the docs.
+When combining `pdm` and `meson-python` install requirements become 
+important. This is not clearly documented as far as I can tell.
 
-For pdm use:
+## Build dependencies 
+
+You will need to install the following dependencies to use these tools together. 
+
+Build is needed if you want to run `python3 -m build` to build your project.
+Ninja is needed for meson-python to run. 
 
 # TODO create envt file for this?
 ```bash
-conda install -c conda-forge pdm
-conda install -c conda-forge build 
-# or install from main given the directory bug 
-conda install -c conda-forge meson-python 
-conda install -c conda-forge ninja
-
+conda install -c conda-forge pdm build meson-python ninja
 ```
 
-You could use pip to install all of these tools if you are a pip user! 
+NOTE: You can use pip to install all of these tools if you are a pip user! 
 
-ToO build with `build` you need to install meson python 
-`pip install meson-python` 
+NOTE: PEP 517?? doesn't specify whether the front end of the back end need to be aware of the dist/ directory where your build outputs will bestored. As such there is a bug using meson-python and PDM. 
+PDM by default cleans / deletes any dist/ directory and tries to place your 
+SDist and wheel files in that directory. 
 
-NOTE: currently there is a bug between meson-python and pdm. 
-PDm by default cleans / deletes any dist/ directory and tries to place your 
-SDist and wheel files in that directoy. 
-
-Meson Python by default does not create that directory for you. 
+`Meson-Python` by default does not create that directory for you. 
 
 An easy work around for this is: 
 
@@ -41,22 +38,21 @@ $ pdm build --no-clean
 To build with meson run:
 `python -m build`
 
-## Build and install package 
-This creates a build using meson - to run this you need to have ninja 
-installed in your envt. 
+## Build and install package in editable mode 
+
+You can also install/build using pip. This creates a build using meson.
+
 `pip install --no-build-isolation .`
 
-`pdm build` doesn't work currently
 
-
+Install the package from the whl. 
 ```bash
 python -m pip install --no-deps dist/*.whl
 ```
 
-
 ## Environments 
 
-Pdm has several options for managing environments. 
+PDM has several options for managing environments. 
 One is following pep xxx it will create a __pypackgages__ directory. it will 
 assume that the packages needed to build and install your package are in that 
 local directory. However, you can also set the environment that you wish to 
@@ -150,3 +146,7 @@ installed_packages = pkg_resources.working_set
 installed_packages_list = sorted(["%s==%s" % (i.key, i.version)
    for i in installed_packages])
 print(installed_packages_list)
+
+
+import os
+print(os.environ['CONDA_DEFAULT_ENV'])
