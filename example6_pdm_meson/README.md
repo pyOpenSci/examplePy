@@ -88,9 +88,9 @@ Using Python interpreter: /Users/leahawasser/opt/miniconda3/envs/pdm_meson/bin/p
 PDM version:
   2.4.0
 Python Interpreter:
-  /Users/leahawasser/opt/miniconda3/envs/pdm_meson/bin/python (3.9)
+  .../miniconda3/envs/pdm_meson/bin/python (3.9)
 Project Root:
-  /Users/leahawasser/Documents/GitHub/pyos/examplePy/example6_pdm_meson
+  ../examplePy/example6_pdm_meson
 Project Packages:
   None
 ```
@@ -120,9 +120,9 @@ Installing the project as an editable package...
 🎉 All complete!
 ```
 
-Weird - it says it installed examplepy but it's not availbale via conda-list
+Weird - it says it installed examplepy but it's not available via conda-list
 ```
-UNKNOWN                       0.0.0       /Users/leahawasser/Documents/GitHub/pyos/examplePy/example6_pdm_meson
+UNKNOWN                       0.0.0       ../examplePy/example6_pdm_meson
 ```
 unknown                   0.0.0                    pypi_0    pypi
 
