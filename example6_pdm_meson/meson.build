@@ -5,4 +5,6 @@ project(
 
 py = import('python').find_installation()
 
-py.install_sources('examplePy/module1.py')
+py.install_sources(
+    'examplePy/__init__.py',
+    'examplePy/module1.py')

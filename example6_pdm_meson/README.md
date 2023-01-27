@@ -8,3 +8,10 @@ To build with meson run:
 
 This creates a build using meson - to run this you need to have ninja installed in your envt. 
 `pip install --no-build-isolation .`
+
+`pdm build` doesn't work currently
+
+
+```bash
+python -m pip install --no-deps dist/*.whl
+```

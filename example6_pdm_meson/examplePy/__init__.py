@@ -1,8 +1,9 @@
 '''
-The __init__.py file is required to import the directory as a package, and 
-can start empty.
+The __init__.py file is required to import the directory as a package.
+It can start as an empty file.
 
-It is used for....
 '''
+
+from .module1 import add_values
 
 
