@@ -77,7 +77,7 @@ Project Packages:
 ../miniconda3/envs/pdm_meson/bin/python
 
 ➜ pdm use ../miniconda3/envs/pdm_meson/bin/python
-Using Python interpreter: /Users/leahawasser/opt/miniconda3/envs/pdm_meson/bin/python (3.9)
+Using Python interpreter: ../miniconda3/envs/pdm_meson/bin/python (3.9)
 (pdm_meson) 
 
 ➜ pdm info
