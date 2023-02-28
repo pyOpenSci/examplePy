@@ -1,11 +1,21 @@
 [build-system]
-requires = ["setuptools>=61.0.0", "setuptools_scm[toml]>=6.2"]
+requires = ["setuptools>=61.0.0", "setuptools_scm[toml]>=6.2"]  
 build-backend = "setuptools.build_meta"
 
+
+# LookupError: setuptools-scm was unable to detect version for 
+
+# To adopt the src/ layout you'll need the following section
+# If you are using a flat layout you can likely remove this!
+[tool.setuptools.packages.find]
+where = ["src"]
+
+# This is optional if you wish to use scm for versioning
 [tool.setuptools_scm]
+root = "../" 
 version_scheme =  "post-release"
 local_scheme =  "node-and-date" # what does this do?
-write_to =  "verde/_version_generated.py"
+write_to =  "src/examplePy/_version_generated.py"
 
 # https://packaging.python.org/en/latest/tutorials/packaging-projects/#configuring-metadata 
 # How do we know how much metadata to include?
@@ -19,6 +29,7 @@ license = {text = "BSD 3-Clause"}
 description = "An example Python package used to support Python packaging tutorials"
 keywords = ["pyOpenSci", "python packaging"]
 readme = "README.md"
+dynamic = ["version"]
 # List of classifiers here: https://pypi.org/classifiers/
 
 classifiers = [
@@ -39,4 +50,3 @@ dependencies = [
 Home = "https://www.pyopensci.org/python-package-tutorials?"
 Repository = "https://github.com/pyopensci/examplePy"
 Documentation = "url-here"
-Bug Tracker = "https://github.com/pyopensci/examplePy/issues"
