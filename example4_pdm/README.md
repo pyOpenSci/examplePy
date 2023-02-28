@@ -77,7 +77,7 @@ Collecting pdm
   Using cached pdm-2.4.0-py3-none-any.whl (205 kB)
 Collecting unearth>=0.7
   Using cached unearth-0.7.2-py3-none-any.whl (39 kB)
-Requirement already satisfied: certifi in /Users/leahawasser/opt/miniconda3/envs/pdm/lib/python3.9/site-packages (from pdm) (2022.12.7)
+Requirement already satisfied: certifi in ../miniconda3/envs/pdm/lib/python3.9/site-packages (from pdm) (2022.12.7)
 Collecting pyproject-hooks
   Using cached pyproject_hooks-1.0.0-py3-none-any.whl (9.3 kB)
 Collecting shellingham>=1.3.2
@@ -153,13 +153,13 @@ PDM did ask me what envt I wanted to use which was nice! it found my pdm conda e
 > pdm init
 Creating a pyproject.toml for PDM...
 Please enter the Python interpreter to use
-0. /Users/leahawasser/opt/miniconda3/envs/pdm/bin/python (3.9)
+0. ../miniconda3/envs/pdm/bin/python (3.9)
 1. /opt/homebrew/bin/python3.11 (3.11)
 2. /opt/homebrew/bin/python3.10 (3.10)
-3. /Users/leahawasser/opt/miniconda3/envs/pdm/bin/python3.9 (3.9)
+3. ../miniconda3/envs/pdm/bin/python3.9 (3.9)
 4. /usr/bin/python3 (3.8)
 Please select (0): 3
-Using Python interpreter: /Users/leahawasser/opt/miniconda3/envs/pdm/bin/python3.9 (3.9)
+Using Python interpreter: ../miniconda3/envs/pdm/bin/python3.9 (3.9)
 Is the project a library that will be uploaded to PyPI [y/n] (n): y
 Project name (example4_pdm): examplePy
 Project version (0.1.0): 0.1.00
@@ -232,7 +232,7 @@ venv.with_pip = False
 Home configuration (/Users/leahawasser/Library/Preferences/pdm/config.toml):
 
 Project configuration (/Users/leahawasser/Documents/GitHub/pyos/examplePy/example4_pdm/.pdm.toml):
-python.path = /Users/leahawasser/opt/miniconda3/envs/pdm/bin/python3.9
+python.path = ../miniconda3/envs/pdm/bin/python3.9
 ```
 
 ```
@@ -240,7 +240,7 @@ python.path = /Users/leahawasser/opt/miniconda3/envs/pdm/bin/python3.9
 PDM version:
   2.4.0
 Python Interpreter:
-  /Users/leahawasser/opt/miniconda3/envs/pdm/bin/python3.9 (3.9)
+  ../miniconda3/envs/pdm/bin/python3.9 (3.9)
 Project Root:
   /Users/leahawasser/Documents/GitHub/pyos/examplePy/example4_pdm
 Project Packages: # this is the __pypackages__ dir if you have one

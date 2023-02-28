@@ -1,2 +1,6 @@
+pdm
 ninja
-meson-python
+#meson-python
+build
+
+# pip install git+https://www.github.com/mesonbuild/meson-python.git

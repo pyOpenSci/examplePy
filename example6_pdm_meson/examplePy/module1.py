@@ -19,4 +19,5 @@ def add_values(num1, num2):
         num 1 and num 2 added together
     
     """
+    print("i'm local, friends")
     return num1 + num2

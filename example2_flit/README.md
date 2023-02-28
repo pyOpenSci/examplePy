@@ -42,16 +42,16 @@ The install for flit is light weight and fast.
 ```bash
 Collecting flit
   Using cached flit-3.8.0-py3-none-any.whl (49 kB)
-Requirement already satisfied: requests in /Users/leahawasser/opt/miniconda3/lib/python3.9/site-packages (from flit) (2.27.1)
+Requirement already satisfied: requests in ../miniconda3/lib/python3.9/site-packages (from flit) (2.27.1)
 Collecting tomli-w
   Using cached tomli_w-1.0.0-py3-none-any.whl (6.0 kB)
 Collecting flit_core>=3.8.0
   Using cached flit_core-3.8.0-py3-none-any.whl (62 kB)
-Requirement already satisfied: docutils in /Users/leahawasser/opt/miniconda3/lib/python3.9/site-packages (from flit) (0.17.1)
-Requirement already satisfied: idna<4,>=2.5 in /Users/leahawasser/opt/miniconda3/lib/python3.9/site-packages (from requests->flit) (3.3)
-Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/leahawasser/opt/miniconda3/lib/python3.9/site-packages (from requests->flit) (2.0.4)
-Requirement already satisfied: certifi>=2017.4.17 in /Users/leahawasser/opt/miniconda3/lib/python3.9/site-packages (from requests->flit) (2022.12.7)
-Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/leahawasser/opt/miniconda3/lib/python3.9/site-packages (from requests->flit) (1.26.9)
+Requirement already satisfied: docutils in ../miniconda3/lib/python3.9/site-packages (from flit) (0.17.1)
+Requirement already satisfied: idna<4,>=2.5 in ../miniconda3/lib/python3.9/site-packages (from requests->flit) (3.3)
+Requirement already satisfied: charset-normalizer~=2.0.0 in ../miniconda3/lib/python3.9/site-packages (from requests->flit) (2.0.4)
+Requirement already satisfied: certifi>=2017.4.17 in ../miniconda3/lib/python3.9/site-packages (from requests->flit) (2022.12.7)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in ../miniconda3/lib/python3.9/site-packages (from requests->flit) (1.26.9)
 Installing collected packages: tomli-w, flit-core, flit
 Successfully installed flit-3.8.0 flit-core-3.8.0 tomli-w-1.0.0
 ```
