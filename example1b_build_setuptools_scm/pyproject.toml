@@ -2,14 +2,13 @@
 requires = ["setuptools>=61.0.0", "setuptools_scm[toml]>=6.2"]  
 build-backend = "setuptools.build_meta"
 
-
-# LookupError: setuptools-scm was unable to detect version for 
-
 # To adopt the src/ layout you'll need the following section
 # If you are using a flat layout you can likely remove this!
 [tool.setuptools.packages.find]
 where = ["src"]
 
+# How do i specify the root correctly to help setuptools find the version?
+# LookupError: setuptools-scm was unable to detect version for 
 # This is optional if you wish to use scm for versioning
 [tool.setuptools_scm]
 root = "../" 
