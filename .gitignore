@@ -4,7 +4,7 @@ __pycache__/
 **/.DS_Store
 
 **/_build
-
+**/examplePy/_version_generated.py
 
 
 # Distribution / packaging

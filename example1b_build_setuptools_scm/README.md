@@ -1,8 +1,11 @@
 # examplePy - setuptools example
 
-This directory illustrates how to create a Python package using setuptools.
+This directory illustrates how to create a Python package using the
+`Build` front end and `setuptools` back-end.
 
-Optionally you can use `setuptools_scm` for versioning which is also shown here.
+### Dynamic versioning
+
+Here you also use `setuptools_scm` for versioning.
 
 Your build requirements for this setup should include:
 
@@ -13,8 +16,8 @@ build
 twine
 ```
 
-Because setuptools is listed in your pyproject.toml file it will be installed
-when your package is build. It will also install Wheel for you which you need
+Because `setuptools` is listed in your **pyproject.toml** file it will be installed
+when your package is build. It will also install `Wheel` for you which you need
 to create your package's wheel.
 
 ## Src Layout
@@ -26,8 +29,10 @@ about why, here <TODO: link to packaging guide when current pr is merged>.
 
 ### Build System specs
 
-The build system here is setuptools which is your build backend. Because setuptools
-does not have a default front end, you will use the [Build frontend](https://pypa-build.readthedocs.io/en/stable/) to build your package in this example.
+The build system here is
+
+- **Front end:** [Build frontend](https://pypa-build.readthedocs.io/en/stable/). `Build` is a simple front end that just runs setuptools on the back end to create your SDist and Wheel files.
+- **Back end:** `setuptools` is your backend.
 
 ```
 [build-system]
