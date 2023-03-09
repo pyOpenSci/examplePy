@@ -16,7 +16,7 @@ root = "../"
 version_scheme =  "post-release"
 local_scheme =  "node-and-date" # what does this do?
 # FileNotFoundError: [Errno 2] No such file or directory: '../examplePy/_version_generated.py'
-write_to =  "examplePy/_version_generated.py"
+write_to =  "example1b_build_setuptools_scm/src/examplePy/_version_generated.py"
 
 # https://packaging.python.org/en/latest/tutorials/packaging-projects/#configuring-metadata 
 # How do we know how much metadata to include?
